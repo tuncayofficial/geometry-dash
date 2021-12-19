@@ -1,5 +1,6 @@
 @import "tailwindcss/base";
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 @import "tailwindcss/components";
 
 @import "tailwindcss/utilities";
@@ -19,12 +20,13 @@
 
 @layer base {
   body {
-    @apply bg-gradient-to-r from-purple-500 to-pink-500 font-mono
+    @apply bg-gradient-to-r from-purple-500 to-pink-500
   }
 }
 
 body {
   color : #FAFAFA;
+  font-family: "Montserrat", sans-serif;
 }
 
 nav {
@@ -54,4 +56,87 @@ nav ul li a {
 .menu {
   top : 80px;
   right : 440px;
+}
+
+
+.about {
+  height: 450px;
+  width: 1000px;
+  background-color: cyan;
+  color: black;
+  border-radius: 10px;
+  align-content: center;
+  text-align: center;
+  padding: 20px;
+  margin: 30px;
+  font-size: 25px;
+}
+
+input {
+  width : 320px;
+  height : 60px;
+  border: 2px solid black;
+  padding: 5px;
+  text-align: center;
+  background: white;
+  border-radius: 8px;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  width : 210px;
+  height : 60px;
+  background-color: rgb(241, 0, 241);;
+  border-radius: 5px;
+  border: 2px solid rgb(241, 0, 241);
+  transition: 300ms all;
+}
+
+.abilitiescontainer {
+  background-color: cyan;
+  height: 200px;
+  width: 1200px;
+  color : black;
+  font-size: 30px;
+}
+
+.abilities {
+  font-size: 23px;
+}
+
+@media all and (max-width : 600px){
+  html {
+    zoom : 70%;
+  }
+  
+
+  .menu {
+    position: absolute;
+    top : 100px;
+    right : 175px;
+  }
+
+  .about {
+    width : 500px;
+    height: 900px;
+  }
+
+  .abilitiescontainer {
+    width: 600px;
+    height : 500px;
+  }
+
+  .abilities {
+    display : flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .news-register {
+    display: flex;
+    flex-direction: column;
+  }
 }
