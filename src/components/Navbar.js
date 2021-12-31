@@ -2,6 +2,7 @@ import Item from "./Item"
 import MenuNav from "./MenuNav"
 import '../index.css';
 import { useState } from "react"
+import { GiHamburgerMenu } from "react-icons/gi"
 
 function Navbar(){
     const [condition, setCondition] = useState(false)
@@ -12,6 +13,7 @@ function Navbar(){
 
     return (
         <div>
+        <span className="menu-icon"><GiHamburgerMenu /></span>
         <nav>
             <ul className="flex flex-row justify-around">
             <li className="transition-all duration-100 cursor-pointer rounded-xl hover:bg-green-300"><a href = "/">Ana səhifə</a></li>
@@ -21,7 +23,7 @@ function Navbar(){
                 <li className="text-white text-2xl duration-100 m-0 p-3 hover:bg-white rounded-xl"><a href = "/register">Əlaqə</a></li>
                 <li className="text-white text-2xl ease-in duration-100 m-0 p-3 hover:bg-white rounded-xl"><a href = "/register">Kitablar</a></li>
             </ul>) : ""}
-            <li className="transition-all duration-100 cursor-pointer rounded-xl bg-green-200 hover:bg-green-300"><a href = "/register">Hesab yarat</a></li>
+            <li className="transition-all duration-100 cursor-pointer rounded-xl bg-green-200 hover:bg-green-300"><a href = "/contact">Əlaqə qur</a></li>
             </ul>
         </nav>
         </div>

@@ -2,7 +2,7 @@
 import './index.css';
 import Navbar from './components/Navbar';
 import Landing from "./components/Pages/Landing"
-import Register from "./components/Pages/Register"
+import Register from "./components/Pages/Contact"
 
 // Modules
 import { initializeApp } from "firebase/app";
@@ -13,19 +13,20 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import Contact from './components/Pages/Contact';
 
 
 
 function App() {
-   const firebaseConfig = {
-  apiKey: "AIzaSyC-0OueXIOzPKj0i3lHRSb3PH85xTtiTls",
-  authDomain: "gdash-community.firebaseapp.com",
-  projectId: "gdash-community",
-  storageBucket: "gdash-community.appspot.com",
-  messagingSenderId: "296474599182",
-  appId: "1:296474599182:web:4471ac390f1128e4c8815f",
-  measurementId: "G-CH8KERKS2G"
-};
+  const firebaseConfig = {
+    apiKey: "AIzaSyBW3ym9FYTIVGP4PlbhL7uudprUk9LnPCo",
+    authDomain: "portfolio-a1b82.firebaseapp.com",
+    projectId: "portfolio-a1b82",
+    storageBucket: "portfolio-a1b82.appspot.com",
+    messagingSenderId: "373242789869",
+    appId: "1:373242789869:web:52189a9942d917eaddf1e4",
+    measurementId: "G-Q4BCCLLGG8"
+  };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
@@ -36,7 +37,7 @@ const analytics = getAnalytics(app);
              <Navbar />
              <Routes>
                <Route exact path='/' element={< Landing />}></Route>
-               <Route exact path='/register' element={< Register />}></Route>
+               <Route exact path='/contact' element={< Contact />}></Route>
              </Routes>
            </div>
     </Router>

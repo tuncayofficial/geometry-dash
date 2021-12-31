@@ -29,6 +29,10 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.menu-icon {
+  display: none;
+}
+
 nav {
   background : transparent;
   width : 100%;
@@ -107,6 +111,22 @@ button {
   font-size: 23px;
 }
 
+.contact {
+  height : 600px;
+  width : 400px;
+  background-color: cyan;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  color : black;
+}
+
+.contact label {
+  margin-top : 15px;
+}
+
 @media all and (max-width : 600px){
   html {
     zoom : 70%;
@@ -121,7 +141,7 @@ button {
 
   .about {
     width : 500px;
-    height: 900px;
+    height: 700px;
   }
 
   .abilitiescontainer {
@@ -135,8 +155,13 @@ button {
     text-align: center;
   }
 
-  .news-register {
+  .newsregister {
     display: flex;
     flex-direction: column;
+  }
+
+  .newsregister button {
+    margin-top: 15px;
+    width: 320px;
   }
 }

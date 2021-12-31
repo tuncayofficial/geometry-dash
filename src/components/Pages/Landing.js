@@ -11,6 +11,7 @@ import { AiFillInstagram } from "react-icons/ai"
 import { BsDiscord } from "react-icons/bs"
 import { AiFillLinkedin } from "react-icons/ai"
 import { AiFillGithub } from "react-icons/ai"
+import { GiHamburgerMenu } from "react-icons/gi"
 
 function Landing(){
    const [email, setEmail] = useState();
@@ -33,7 +34,7 @@ function Landing(){
       Salam, mənim adım Tuncaydır! 5 illik təcrübə ilə web-programming və web-design ilə məşğul oluram.<br /><br />
       Əsasən, ReactJS və ExpressJS ilə işləyirəm. Bundan başqa Flutter və Python kimi dillər ilə tanışlığım var!<br /><br />
       Newsletter-a qoşularaq yeniliklərdən xəbərdar ol! <br /><br />
-      <div className = 'news-register flex flex-row m-auto justify-center items-center'>
+      <div className = 'newsregister flex m-auto justify-center items-center'>
         <input onChange = {(e) => setEmail(e.target.value)} placeholder='E-mail' type = "email" className='mx-6' />
         <button>Qoşul</button>
       </div>
