@@ -99,6 +99,13 @@ button {
   transition: 300ms all;
 }
 
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
 .abilitiescontainer {
   background-color: cyan;
   height: 200px;
@@ -112,24 +119,48 @@ button {
 }
 
 .contact {
-  height : 600px;
-  width : 400px;
+  height : 500px;
+  width : 600px;
   background-color: cyan;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: auto;
+  margin: auto 400px;
   color : black;
+  border-radius: 8px;
 }
 
 .contact label {
   margin-top : 15px;
 }
 
+textarea {
+  outline: none;
+  width : 320px;
+  border-radius: 8px;
+  border: 2px solid black;
+  text-align: center;
+  height : 200px;
+}
+
+.alert-pass {
+  background-color: rgb(9, 255, 0);
+  width : 500px;
+  height : 90px;
+  margin: auto 10px;
+  border-radius: 8px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 90px; 
+}
+
 @media all and (max-width : 600px){
   html {
-    zoom : 70%;
+    zoom : 65%;
   }
   
 
@@ -141,7 +172,7 @@ button {
 
   .about {
     width : 500px;
-    height: 700px;
+    height: 750px;
   }
 
   .abilitiescontainer {
@@ -158,6 +189,10 @@ button {
   .newsregister {
     display: flex;
     flex-direction: column;
+  }
+
+  .newsregister input:first-child {
+    margin-bottom: 20px;
   }
 
   .newsregister button {

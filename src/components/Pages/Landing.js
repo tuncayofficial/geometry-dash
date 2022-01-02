@@ -13,10 +13,11 @@ import { AiFillLinkedin } from "react-icons/ai"
 import { AiFillGithub } from "react-icons/ai"
 import { GiHamburgerMenu } from "react-icons/gi"
 
-function Landing(){
-   const [email, setEmail] = useState();
-  
+// Components 
 
+import Newsletter from '../Newsletter';
+
+function Landing(){  
 
 	 return(
     <div className = "w-61 flex flex-col items-center jusitfy-center m-auto">
@@ -29,16 +30,7 @@ function Landing(){
        <abbr title = 'LinkedIn' className='cursor-pointer m-3'><AiFillLinkedin size = {50} color='cyan' /></abbr>
        <abbr title = 'Github' className='cursor-pointer m-3'><AiFillGithub size = {50} color='black' /></abbr>
       </div>
-      <div className='about text-center '>
-        <span className = "m-auto font-3xl"><h1>Haqqımda</h1></span>
-      Salam, mənim adım Tuncaydır! 5 illik təcrübə ilə web-programming və web-design ilə məşğul oluram.<br /><br />
-      Əsasən, ReactJS və ExpressJS ilə işləyirəm. Bundan başqa Flutter və Python kimi dillər ilə tanışlığım var!<br /><br />
-      Newsletter-a qoşularaq yeniliklərdən xəbərdar ol! <br /><br />
-      <div className = 'newsregister flex m-auto justify-center items-center'>
-        <input onChange = {(e) => setEmail(e.target.value)} placeholder='E-mail' type = "email" className='mx-6' />
-        <button>Qoşul</button>
-      </div>
-    </div>
+      <Newsletter />
     <br />
     <div className='abilitiescontainer flex flex-col items-center justify-center rounded-xl'>
       <h1>Bacarıqlar</h1><br />
