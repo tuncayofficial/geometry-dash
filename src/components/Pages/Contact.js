@@ -8,7 +8,8 @@ function Contact(){
   const [email, setEmail] = useState()
 
   return(
-    <form className="contact">
+    <div align = "center">
+      <form className="contact">
      <label for = "username">
        <input id = "username" placeholder="İstifadəçi adı" />
      </label>
@@ -22,6 +23,7 @@ function Contact(){
        <button id = "submit">Göndər</button>
      </label>
     </form>
+    </div>
   )
 }
 
